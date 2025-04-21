@@ -156,6 +156,23 @@ a {
     object-fit: contain; /* Ensures the image maintains its aspect ratio */
 }
 
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo-main {
+    display: flex;
+    align-items: center;
+}
+
+.logo-subtitle {
+    font-size: 0.75rem;
+    color: #666;
+    margin-top: -5px;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
