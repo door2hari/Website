@@ -3,13 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | WAFT Engineering Services</title>
+    <meta name="description" content="Contact WAFT Engineering Services for mechanical product development, CAD/CAM/CAE solutions, and technical training. Get in touch with our expert team today.">
+    <meta name="keywords" content="contact WAFT Engineering, engineering consultation, mechanical design services, technical support">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://waft.engineering/contact">
+    <meta property="og:title" content="Contact Us | WAFT Engineering">
+    <meta property="og:description" content="Get in touch with WAFT Engineering Services for all your mechanical engineering and product development needs.">
+    <meta property="og:image" content="images/Logo3.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://waft.engineering/contact">
+    <meta property="twitter:title" content="Contact Us | WAFT Engineering">
+    <meta property="twitter:description" content="Get in touch with WAFT Engineering Services for all your mechanical engineering and product development needs.">
+    <meta property="twitter:image" content="images/Logo3.png">
+
+    <link rel="icon" type="image/png" href="images/Logo3.png">
+    <title>Contact Us | WAFT Engineering</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <img src="images/Logo3.png" alt="WAFT Logo">
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m18 15-6-6-6 6"/>
+        </svg>
+    </button>
+
     <!-- Header -->
     <header class="header">
         <div class="container">
@@ -22,6 +56,11 @@
                         <small class="logo-subtitle">An initiative by Stuti Technologies</small>
                     </div>
                 </a>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
@@ -94,20 +133,20 @@
                         <form class="contact-form"
                             action="https://formspree.io/f/mqapnbvr"
                             method="POST">
-                            <div class="form-group">
+                                <div class="form-group">
                                 <label for="name">Full Name</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
                                 <label for="email">Email Address</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
                             <div class="form-group">
                                 <label for="phone">Phone Number</label>
                                 <input type="tel" id="phone" name="phone">
                             </div>
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
                                 <select id="subject" name="subject" required>
                                     <option value="">Select a subject</option>
                                     <option value="product-design">Product Design</option>
@@ -116,14 +155,14 @@
                                     <option value="training">Training</option>
                                     <option value="other">Other</option>
                                 </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
                                 <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </form>
-                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
                     <div class="map-wrapper">
                         <div class="map-container">
                             <iframe 
@@ -181,7 +220,7 @@
                         <li><a href="services.html">Services</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="projects.html">Trainings</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
@@ -209,5 +248,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
